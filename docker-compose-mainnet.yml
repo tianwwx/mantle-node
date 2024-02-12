@@ -16,7 +16,7 @@ services:
     volumes:
       - ./data/geth:/root/.ethereum/geth/
     environment:
-      ETH1_HTTP: https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161 #change this 
+      ETH1_HTTP: https://eth-mainnet.nodereal.io/v1/fdaaabeda81f4b558fb0211a7dc288ab
       SEQUENCER_CLIENT_HTTP: https://rpc.mantle.xyz
       ROLLUP_STATE_DUMP_PATH: https://mantlenetworkio.github.io/networks/mainnet/genesis.json
       ROLLUP_CLIENT_HTTP: https://dtl.mantle.xyz
@@ -25,5 +25,5 @@ services:
       RETRIES: 60
       ROLLUP_VERIFIER_ENABLE: 'true'
     ports:
-      - ${VERIFIER_HTTP_PORT:-8545}:8545
-      - ${VERIFIER_WS_PORT:-8546}:8546
+      - 8565:8545
+      - 8566:8546
