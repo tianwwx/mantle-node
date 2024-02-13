@@ -19,7 +19,7 @@ services:
       ETH1_HTTP: https://eth-mainnet.nodereal.io/v1/fdaaabeda81f4b558fb0211a7dc288ab
       SEQUENCER_CLIENT_HTTP: https://rpc.mantle.xyz
       ROLLUP_STATE_DUMP_PATH: https://mantlenetworkio.github.io/networks/mainnet/genesis.json
-      ROLLUP_CLIENT_HTTP: https://dtl.mantle.xyz
+      ROLLUP_CLIENT_HTTP: https://dtl-ap.mantle.xyz
       ROLLUP_BACKEND: 'l2'
       ETH1_CTC_DEPLOYMENT_HEIGHT: 8
       RETRIES: 60
