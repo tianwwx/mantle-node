@@ -55,7 +55,6 @@ services:
       - --metrics.port=9001
       - --snapshot=false
       - --rpc.evmtimeout=30s
-      - --rpc.gascap=0
     volumes:
       - ./mainnet/secret:/secret/
       - ./data/mainnet-geth:/db/geth/
